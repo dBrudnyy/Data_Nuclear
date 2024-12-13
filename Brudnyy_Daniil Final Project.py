@@ -16,7 +16,7 @@ import pandas as pd
 from PIL import Image
 #Import necessary packages
 
-file_path = "C:\\Users\\conta\\Downloads\\nuclear_explosions.csv" #update for program use on different device
+file_path = "/workspaces/Data_Nuclear/nuclear_explosions.csv" #update for program use on different device
 df_nuclear = pd.read_csv(file_path) #reads data file and creates dataframe
 
 # Creates tabs for different information
@@ -28,7 +28,7 @@ with page[0] :
     st.write("Welcome to an analysis of nuclear explosions in the world.")
     st.write("By Daniil Brudnyy")
     # [ST4] Uploads downloaded image(see attached submission for image) and change path for different user
-    image_file = Image.open("C:\\Users\\conta\\Downloads\\nuclear_blast.jpg")
+    image_file = Image.open("/workspaces/Data_Nuclear/nuclear_blast.jpg")
     # Sets image size and caption
     st.image(image_file, width = 850, caption = "Nuclear Blast Mushroom Cloud")
 with page[1] :
